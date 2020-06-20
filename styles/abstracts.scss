@@ -84,3 +84,9 @@ $white-67: rgba(255, 255, 255, 0.67);
     letter-spacing: normal;
     color: #000000;
 }
+
+@mixin desktop {
+    @media (min-width: 748px){
+        @content;
+    }
+}
