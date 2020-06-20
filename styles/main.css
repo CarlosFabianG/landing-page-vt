@@ -1,0 +1,32 @@
+/* Variables */
+/* Mixins */
+header {
+  width: 100vw;
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
+  background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67));
+}
+header .nav {
+  display: none;
+}
+header .nav .nav__menu {
+  display: none;
+}
+header .nav .nav__icons {
+  display: none;
+}
+
+.hero__container {
+  background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
+}
+
+.section-3 {
+  background: url("../assets/Section/bg-familia-vitalinea.jpg");
+}
+
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

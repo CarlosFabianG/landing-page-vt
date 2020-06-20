@@ -1,6 +1,16 @@
-Header {
-    width: 375px;
-    height: 775px;
+header {
+    width: 100vw;
     box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
-    background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
-}
+    background-image: linear-gradient(to bottom, $white, $white-67);
+
+    .nav {
+        display: none;
+        .nav__menu {
+            display: none;
+        }
+        .nav__icons {
+            display: none;
+        }
+    }
+
+    }
