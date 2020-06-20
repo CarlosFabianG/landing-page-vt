@@ -3,11 +3,12 @@
 $darkish-purple: #78246d;
 $white: #ffffff;
 $white-67: rgba(255, 255, 255, 0.67);
+$open-sans: 'Open Sans', sans-serif;
 
 
 /* Mixins */
 @mixin text-style-2 {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 40px;
     font-weight: 300;
     font-stretch: normal;
@@ -18,7 +19,7 @@ $white-67: rgba(255, 255, 255, 0.67);
 }
 
 @mixin text-style-3 {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 20px;
     font-weight: 300;
     font-stretch: normal;
@@ -29,7 +30,7 @@ $white-67: rgba(255, 255, 255, 0.67);
 }
 
 @mixin text-style-4 {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -41,7 +42,7 @@ $white-67: rgba(255, 255, 255, 0.67);
 }
 
 @mixin text-style-5 {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 14px;
     font-weight: 300;
     font-stretch: normal;
@@ -52,7 +53,7 @@ $white-67: rgba(255, 255, 255, 0.67);
 }
 
 @mixin text-style-6 {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -63,7 +64,7 @@ $white-67: rgba(255, 255, 255, 0.67);
 }
 
 @mixin text-style-7 {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
@@ -75,7 +76,7 @@ $white-67: rgba(255, 255, 255, 0.67);
 }
 
 @mixin text-style {
-    font-family: OpenSans;
+    font-family: $open-sans;
     font-size: 17px;
     font-weight: 300;
     font-stretch: normal;

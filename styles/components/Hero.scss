@@ -1,4 +1,66 @@
 
-.hero__container {
-    background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);;
+.hero{
+    background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
+    padding: 0 5.5vw;
+
+    &__image-container {
+        position: absolute;
+        padding-left: 22vw;
+        padding-top: 20px;
+        img {
+            height: 300px;
+        }
+    }
+
+    &__text-container {
+        padding-top: 250px;
+        h4 {
+            @include text-style-3;
+        }
+        p {
+            @include text-style-5;
+        }
+        .text__sabor {
+            font-weight: 400;
+            padding-right: 5px;
+            @include text-style-7;
+            &--active {
+                background-color: #ff0000;
+            }
+            span {
+                width: 78px;
+                height: 23px;
+                opacity: 0.14;
+                border-radius: 11.5px;
+                border: solid 1px #000000;
+                padding: 0 10px;
+                margin-left: 3px;
+            }
+        }
+        button {
+            width: 89vw;
+            height: 40px;
+            background-color: $darkish-purple;
+            @include text-style-4;
+            border: 0;
+        }
+    }
+
+    .hero-icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            display: flex;
+        }
+        span {
+            background: $darkish-purple;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }

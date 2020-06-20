@@ -1,12 +1,12 @@
 header {
     width: 100vw;
+    height: 80px;
     box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
     background-image: linear-gradient(to bottom, $white, $white-67);
     @include text-style-6;
     .nav {
         display: none;
     }
-
 
     @include desktop {
         display: flex;
