@@ -28,4 +28,32 @@
             padding: 5px;
         }
     }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+    }
+    .nutrimental__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        h3 {
+            font-size: 32px;
+        }
+        .table {
+            width: 30vw;
+        }
+    }
+    .text-container {
+        display: flex;
+        .text {
+            width: 25vw;
+            .text-ingredientes {
+                width: 18vw;
+            }
+        }
+    }
 }

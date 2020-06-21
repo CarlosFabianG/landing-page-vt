@@ -241,6 +241,34 @@ header .nav {
 .nutrimental .table td {
   padding: 5px;
 }
+@media (min-width: 1024px) {
+  .nutrimental {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+}
+.nutrimental .nutrimental__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.nutrimental .nutrimental__container h3 {
+  font-size: 32px;
+}
+.nutrimental .nutrimental__container .table {
+  width: 30vw;
+}
+.nutrimental .text-container {
+  display: flex;
+}
+.nutrimental .text-container .text {
+  width: 25vw;
+}
+.nutrimental .text-container .text .text-ingredientes {
+  width: 18vw;
+}
 
 .familia {
   background: url("../assets/Section/bg-familia-vitalinea.jpg");
