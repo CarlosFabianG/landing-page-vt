@@ -10,10 +10,6 @@
         img {
             height: 300px;
         }
-
-        @include desktop {
-            display: flex;
-        }
     }
 
     &__text-container {
@@ -70,6 +66,47 @@
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+    }
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        height: 664px;
+        &__image-container {
+            position: static;
+            padding-left: 0;
+            padding-top: 6vh;
+            margin-right: 5vw;
+            img{
+                height: 60vh;
+            }
+        }
+        &__text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 40vw;
+            text-align: start;
+            margin-top: 10vh;
+            padding-top: 0;
+
+            h4 {
+                margin: 0;
+                @include text-style-2;
+            }
+            p {
+                @include text-style;
+            }
+            .hero-icons {
+                div{
+                    margin-bottom: 90px;
+                }
+                
+            }
+            button {
+                width: 20vw;
+            }
         }
     }
 }
