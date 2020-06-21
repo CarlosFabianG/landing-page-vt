@@ -1,8 +1,11 @@
 /* Variables */
 /* Mixins */
+/* mixins media queries */
 header {
   width: 100vw;
   height: 80px;
+  display: flex;
+  align-items: center;
   box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67));
   font-family: "Open Sans", sans-serif;
@@ -17,7 +20,7 @@ header {
 header .nav {
   display: none;
 }
-@media (min-width: 748px) {
+@media (min-width: 1024px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -62,6 +65,11 @@ header .nav {
 }
 .hero__image-container img {
   height: 300px;
+}
+@media (min-width: 1024px) {
+  .hero__image-container {
+    display: flex;
+  }
 }
 .hero__text-container {
   padding-top: 250px;
@@ -130,9 +138,14 @@ header .nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
 }
 .hero .hero-icons div {
   display: flex;
+  margin-bottom: 20px;
+}
+.hero .hero-icons div .hero-icons-sello {
+  margin-right: 25px;
 }
 .hero .hero-icons span {
   background: #78246d;
@@ -144,8 +157,60 @@ header .nav {
   align-items: center;
 }
 
-.section-3 {
+.nutrimental {
+  font-family: "Open Sans", sans-serif;
+  padding: 0 5.5vw;
+}
+.nutrimental h3 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2.41px;
+  color: #78246d;
+}
+.nutrimental .text-first-p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.nutrimental .text-ingredientes {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000000;
+}
+.nutrimental .table {
+  width: 89vw;
+  background: #fafafa;
+  font-size: 12px;
+  color: #78246d;
+}
+.nutrimental .table .row-evenly {
+  background: #f8f8f8;
+}
+.nutrimental .table td {
+  padding: 5px;
+}
+
+.familia {
   background: url("../assets/Section/bg-familia-vitalinea.jpg");
+}
+
+.footer {
+  font-size: 11px;
+}
+.footer__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__text {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
 }
 
 body {

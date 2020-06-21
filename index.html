@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Vitalínea</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
     <script src='main.js'></script>
 </head>
@@ -48,35 +48,35 @@
         </div>
         <div class="hero-icons">
             <div>
-                <img src="assets/Hero/hero-icons/img-sello-avalado.png"/>
+                <img  class="hero-icons-sello" src="assets/Hero/hero-icons/img-sello-avalado.png"/>
                 <img src="assets/Hero/hero-icons/img-100-kcal.png"/>
             </div>
             <span><img src="assets/Hero/hero-icons/flecha.png"></span>
         </div>
     </section>
 
-    <section>
-        <div>
+    <section class="nutrimental">
+        <div class="nutrimental__container">
             <h3>Información nutrimental</h3>
             <div>
                 <div class="text">
-                    <p>
-                        Vitalínea® Bebible Guayaba 217gr
-                        Valor promedio por porción de 217gr
+                    <p class="text-first-p">
+                        Vitalínea® Bebible Guayaba 217gr<br/>
+                        Valor promedio por porción de 217gr<br/>
                         Porciones por envase: 1
                     </p>
-                    <p>
-                        Ingredientes:
+                    <p class="text-ingredientes">
+                        <strong>Ingredientes:</strong><br/>
                         Leche descremada pasteurizada y/o reconstituida pasteurizada de vaca. 3.5% preparado de fruta guayaba (acesulfame K y sucralosa (27.2mg/100g)), crema, almidón modificado, maltodextrina y cultivos lácticos.
                     </p>
                 </div>
 
-                <table>
+                <table class="table">
                     <tr>
                         <td>Contenido energético kj/kcal</td>
                         <td>413,2/97,9</td>
                     </tr>
-                    <tr>
+                    <tr class="row-evenly">
                         <td>Proteína(g)</td>
                         <td>5.3</td>
                     </tr>
@@ -84,7 +84,7 @@
                         <td>Grasas(lípidos)(g)</td>
                         <td>2.1</td>
                     </tr>
-                    <tr>
+                    <tr class="row-evenly">
                         <td>Grasas saturadas(g)</td>
                         <td>1.4</td>
                     </tr>
@@ -92,7 +92,7 @@
                         <td>Carbohidratos(Hidratos de carbono)(g)</td>
                         <td>12.4</td>
                     </tr>
-                    <tr>
+                    <tr class="row-evenly">
                         <td>Azúcares(g)</td>
                         <td>7</td>
                     </tr>
@@ -100,7 +100,7 @@
                         <td>Azúcares añadidos(g)</td>
                         <td>0.1</td>
                     </tr>
-                    <tr>
+                    <tr class="row-evenly">
                         <td>Fibra dietética(g)</td>
                         <td>0.0</td>
                     </tr>
@@ -108,7 +108,7 @@
                         <td>Sodio(mg)</td>
                         <td>92.7</td>
                     </tr>
-                    <tr>
+                    <tr class="row-evenly">
                         <td>Calcio(mg)</td>
                         <td>199.6</td>
                     </tr>
@@ -122,7 +122,7 @@
         </div>
     </section>
 
-    <section class="section-3">
+    <section class="familia">
         <h2>La familia vitalínea</h2>
         <figure>
             <img>
@@ -140,11 +140,20 @@
         </figure>
     </section>
 
-    <footer>
-        <img src="assets/img-logo-danone.png" alt="logo-danone">
-        <span>Términos y condiciones    |    Políticas de privacidad    |     Aviso de privacidad</span>
-        <span>Danone de México 2017 ©. Todos los derechos reservados 2017</span>
-        <img src="assets/img-logo-footer.png" alt="">
+    <footer class="footer">
+        
+        <div class="footer__icons">
+            <img src="assets/Footer/img-logo-danone.png" alt="logo-danone">
+            <span>Términos y condiciones    |    Políticas de privacidad    |     Aviso de privacidad</span>
+            <p>Danone de México 2017 ©. Todos los derechos reservados 2017</p>    
+        </div>
+
+        <div class="footer__text">
+           
+            <img src="assets/Footer/img-logo-footer.png" alt="">
+        </div>
+            
+        
     </footer>
     
 </body>

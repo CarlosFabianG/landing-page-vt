@@ -86,8 +86,15 @@ $open-sans: 'Open Sans', sans-serif;
     color: #000000;
 }
 
-@mixin desktop {
+/* mixins media queries */
+@mixin tablet {
     @media (min-width: 748px){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1024px){
         @content;
     }
 }
