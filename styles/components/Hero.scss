@@ -1,11 +1,12 @@
 
 .hero{
     background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
+    box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
     padding: 0 5.5vw;
 
     &__image-container {
         position: absolute;
-        padding-left: 22vw;
+        padding-left: 24vw;
         padding-top: 20px;
         img {
             height: 300px;

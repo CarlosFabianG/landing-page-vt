@@ -12,8 +12,14 @@
 <body>
     <header class="header">
         
-        <img src="assets/Navbar/img-logo-vitalinea.png" alt="logo"/>
+        <img class="header-logo"src="assets/Navbar/img-logo-vitalinea.png" alt="logo"/>
 
+        <div class="burguer-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        
         <nav class="nav">
             <ul class="nav__menu">
                 <li><a href="#">Nuestros productos</a></li>
@@ -125,37 +131,39 @@
     </section>
 
     <section class="familia">
-        <h2>La familia vitalínea</h2>
-        <figure>
-            <img>
-            <p>Vitalínea Griego</p>
-        </figure>
+        <h2 class="familia__title">La familia vitalínea</h2>
 
-        <figure>
-            <img>
-            <p>Vitalínea Sin Azúcar</p>
-        </figure>
-
-        <figure>
-            <img>
-            <p>Vitalínea Bebible</p>
-        </figure>
+        <div class="product__container">
+            <figure class="familia__product">
+                <img class="familia__product--griego" src="assets/Familia/products/img-vitalinea-griego@2x.png" alt="vitalinea-griego">
+                <p>Vitalínea Griego</p>
+            </figure>
+    
+            <figure class="familia__product">
+                <img class="familia__product--sn-azucar" src="assets/Familia/products/img-vitalinea-sin-azucar@2x.png" alt="vitalinea-sin-azucar">
+                <p>Vitalínea Sin Azúcar</p>
+            </figure>
+    
+            <figure class="familia__product">
+                <img class="familia__product--bebible" src="assets/Familia/products/img-vitalinea-bebible.png" alt="vitalinea-bebible">
+                <p>Vitalínea Bebible</p>
+            </figure>
+        </div>
     </section>
 
     <footer class="footer">
         
         <div class="footer__icons">
             <img src="assets/Footer/img-logo-danone.png" alt="logo-danone">
-            <span>Términos y condiciones    |    Políticas de privacidad    |     Aviso de privacidad</span>
-            <p>Danone de México 2017 ©. Todos los derechos reservados 2017</p>    
+            <img src="assets/Footer/img-logo-footer.png" alt="">
         </div>
 
         <div class="footer__text">
-           
-            <img src="assets/Footer/img-logo-footer.png" alt="">
+            <p>Términos y condiciones    |    Políticas de privacidad    |     Aviso de privacidad</p>
+            <p>Danone de México 2017 ©. Todos los derechos reservados 2017</p> 
+            
         </div>
             
-        
     </footer>
     
 </body>

@@ -5,6 +5,7 @@ header {
   width: 100vw;
   height: 80px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67));
@@ -17,8 +18,32 @@ header {
   letter-spacing: normal;
   color: #000000;
 }
+header .header-logo {
+  margin-left: 7vw;
+}
 header .nav {
   display: none;
+}
+header .burguer-icon {
+  background-color: transparent;
+  width: 28px;
+  height: 23px;
+  margin-right: 8vw;
+  margin-bottom: 5px;
+}
+header .burguer-icon span {
+  background-color: #b98b3c;
+  height: 5px;
+  width: 28px;
+  /* padding-top: 2px; */
+  display: block;
+  margin-top: 5px;
+  margin-left: 8px;
+  border-radius: 20px;
+}
+header .burguer-icon span:nth-child(2) {
+  width: 20px;
+  margin-left: 15px;
 }
 @media (min-width: 1024px) {
   header {
@@ -56,11 +81,12 @@ header .nav {
 
 .hero {
   background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
+  box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
   padding: 0 5.5vw;
 }
 .hero__image-container {
   position: absolute;
-  padding-left: 22vw;
+  padding-left: 24vw;
   padding-top: 20px;
 }
 .hero__image-container img {
@@ -247,45 +273,123 @@ header .nav {
     justify-content: center;
     margin-top: 10vh;
     margin-bottom: 5vh;
+    height: 74vh;
   }
-}
-.nutrimental .nutrimental__container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.nutrimental .nutrimental__container h3 {
-  font-size: 32px;
-}
-.nutrimental .nutrimental__container .table {
-  width: 30vw;
-}
-.nutrimental .text-container {
-  display: flex;
-}
-.nutrimental .text-container .text {
-  width: 25vw;
-}
-.nutrimental .text-container .text .text-ingredientes {
-  width: 18vw;
+  .nutrimental .nutrimental__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .nutrimental .nutrimental__container h3 {
+    font-size: 32px;
+  }
+  .nutrimental .nutrimental__container .table {
+    width: 34.2vw;
+    height: 35vh;
+    font-size: 14px;
+  }
+  .nutrimental .nutrimental__container td {
+    height: 33px;
+  }
+  .nutrimental .text-container {
+    display: flex;
+  }
+  .nutrimental .text-container .text {
+    width: 25vw;
+  }
+  .nutrimental .text-container .text .text-ingredientes {
+    width: 18vw;
+  }
 }
 
 .familia {
-  background: url("../assets/Section/bg-familia-vitalinea.jpg");
+  background: url("../assets/Familia/bg-familia-vitalinea.jpg");
+  margin-top: 5vh;
+  font-family: "Open Sans", sans-serif;
+  color: #78246d;
+}
+.familia__title {
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 6vh;
+  text-transform: uppercase;
+}
+.familia .product__container {
+  display: flex;
+  flex-direction: column;
+}
+.familia__product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.familia__product--griego {
+  width: 178px;
+  height: 106px;
+}
+.familia__product--sn-azucar {
+  width: 120px;
+  height: 130px;
+}
+.familia__product--bebible {
+  width: 150px;
+  height: 220px;
+}
+.familia__product p {
+  font-size: 11px;
+  font-weight: 300;
+}
+@media (min-width: 1024px) {
+  .familia {
+    height: 72vh;
+  }
+  .familia__title {
+    font-size: 44px;
+  }
+  .familia .product__container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .familia__product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .familia__product--griego {
+    width: 278px;
+    height: 206px;
+  }
+  .familia__product--sn-azucar {
+    width: 228px;
+    height: 267px;
+  }
+  .familia__product--bebible {
+    width: 296px;
+    height: 414px;
+  }
+  .familia__product p {
+    font-size: 22px;
+    font-weight: 300;
+  }
 }
 
 .footer {
-  font-size: 11px;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 25px 5px;
 }
 .footer__icons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
 }
 .footer__text {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 12px;
 }
 
 body {

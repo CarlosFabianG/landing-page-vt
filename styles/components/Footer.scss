@@ -1,14 +1,15 @@
 .footer {
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 25px 5px;
     &__icons {
         display: flex;
         justify-content: space-between;
         align-items: center;
-       
+        padding: 0 15px;
     }
     &__text {
         text-align: center;
         font-family: $open-sans;
-        font-size: 12px;
     }
 }

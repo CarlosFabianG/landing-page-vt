@@ -34,25 +34,34 @@
         justify-content: center;
         margin-top: 10vh;
         margin-bottom: 5vh;
-    }
-    .nutrimental__container {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+        height: 74vh;
 
-        h3 {
-            font-size: 32px;
+        .nutrimental__container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+    
+            h3 {
+                font-size: 32px;
+            }
+            .table {
+                width: 34.2vw;
+                height: 35vh;
+                font-size: 14px;
+            }
+            td {
+                height: 33px;
+            }
         }
-        .table {
-            width: 30vw;
-        }
-    }
-    .text-container {
-        display: flex;
-        .text {
-            width: 25vw;
-            .text-ingredientes {
-                width: 18vw;
+
+        .text-container {
+            display: flex;
+            .text {
+                width: 25vw;
+                .text-ingredientes {
+                    width: 18vw;
+                }
             }
         }
     }
