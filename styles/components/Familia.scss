@@ -45,11 +45,13 @@
 
         &__title {
             font-size: 44px;
+            padding-top: 7vh;
         }
         .product__container {
             flex-direction: row;
             justify-content: space-around;
             align-items: baseline;
+            margin-top: 7vh;
         }
         &__product {
             display: flex;
@@ -57,20 +59,21 @@
             align-items: center;
             
             &--griego {
-                width: 278px;
-                height: 206px;
+                width: 19.3vw;
+                height: 20.2vh;
             }
             &--sn-azucar {
-                width: 228px;
-                height: 267px;
+                width: 16vw;
+                height: 26.1vh;
             }
             &--bebible {
-                width: 296px;
-                height: 414px
+                width: 29vh;
+                height: 40.4vh;
             }
             p {
                 font-size: 22px;
                 font-weight: 300;
+                margin: 0;
             }
         }
     

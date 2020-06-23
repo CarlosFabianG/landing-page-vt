@@ -7,12 +7,55 @@ header {
     box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
     background-image: linear-gradient(to bottom, $white, $white-67);
     @include text-style-6;
-
+    z-index: 2;
     .header-logo {
         margin-left: 7vw;
     }
     .nav {
         display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 100vw;
+        position: fixed;
+        background-color: $darkish-purple;
+        width: 100vw;
+        height: 100vh;
+        z-index: 3;
+        transition: .3s;
+    }
+
+    .nav--active {
+        left: 0;
+        .nav__menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50vh;
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 300;
+            padding-left: 0;
+            list-style: none;
+            a {
+                text-decoration: none;
+                list-style: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+        .nav__icons {
+            position: absolute;
+            top: 90vh;
+            background: #4f164d;
+            width: 40vw;
+            height: 7vh;
+            display: inline-flex;
+            justify-content: space-around;
+        }
     }
 
     .burguer-icon {
@@ -25,7 +68,6 @@ header {
             background-color: #b98b3c;
             height: 5px;
             width: 28px;
-            /* padding-top: 2px; */
             display: block;
             margin-top: 5px;
             margin-left: 8px;
@@ -34,6 +76,31 @@ header {
         & span:nth-child(2){
             width: 20px;
             margin-left: 15px;
+        }
+        &--active {
+            z-index: 4;
+            background: #4f164d;
+            margin-right: 3vw;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            & span:nth-child(1){
+                transform: rotate(45deg);
+                width: 35px;
+                height: 10px;
+                margin-top: 24px;
+                margin-left: 11px;
+            }
+            & span:nth-child(2){
+                transform: rotate(-45deg);
+                width: 35px;
+                height: 10px;
+                margin-top: -9px;
+                margin-left: 11px;
+            }
+            & span:nth-child(3){
+                display: none;
+            }
         }
     }
 
@@ -69,6 +136,9 @@ header {
                 }
             }
         }
+        .burguer-icon {
+            display: none;
+        }
     }
-
+    
     }
