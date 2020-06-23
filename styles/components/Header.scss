@@ -8,9 +8,7 @@ header {
     background-image: linear-gradient(to bottom, $white, $white-67);
     @include text-style-6;
     z-index: 2;
-    .header-logo {
-        margin-left: 7vw;
-    }
+    
     .nav__desktop {
         display: none;
     }
@@ -37,7 +35,7 @@ header {
                 justify-content: space-around;
                 height: 50vh;
                 text-align: center;
-                font-size: 24px;
+                font-size: 16px;
                 text-transform: uppercase;
                 font-weight: 300;
                 padding-left: 0;

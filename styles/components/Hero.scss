@@ -3,7 +3,7 @@
     background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
     box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
     padding: 0 5.5vw;
-
+    clip-path: polygon(100% 100%, 0 calc(100% - 15vw), 0% 0%, 100% 0%);
     &__image-container {
         position: absolute;
         padding-left: 24vw;
@@ -73,14 +73,16 @@
     @include desktop {
         display: flex;
         justify-content: center;
+        align-items: center;
         height: 664px;
+        clip-path: polygon(100% 100%, 0 calc(100% - 10vw), 0% 0%, 100% 0%);
         &__image-container {
             position: static;
             padding-left: 0;
             padding-top: 6vh;
             margin-right: 5vw;
             img{
-                height: 60vh;
+                height: 555px;
             }
         }
         &__text-container {

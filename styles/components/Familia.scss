@@ -41,7 +41,7 @@
     }
 
     @include desktop {
-        height: 72vh;
+        height: 719px;
 
         &__title {
             font-size: 44px;
@@ -59,16 +59,16 @@
             align-items: center;
             
             &--griego {
-                width: 19.3vw;
-                height: 20.2vh;
+                width: 356px;
+                height: 212px;
             }
             &--sn-azucar {
-                width: 16vw;
-                height: 26.1vh;
+                height: 256px;
+                width: 223px;
             }
             &--bebible {
-                width: 29vh;
-                height: 40.4vh;
+                width: 296px;
+                height: 414px;
             }
             p {
                 font-size: 22px;
