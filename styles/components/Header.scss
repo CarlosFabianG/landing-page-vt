@@ -114,6 +114,8 @@ header {
         justify-content: space-between;
         align-items: center;
         height: 100px;
+        z-index: 110;
+        position: relative;
         img{
             padding-left: 6vw;
         }

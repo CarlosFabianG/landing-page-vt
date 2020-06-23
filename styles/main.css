@@ -118,6 +118,8 @@ header .burguer-icon--active span:nth-child(3) {
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    z-index: 110;
+    position: relative;
   }
   header img {
     padding-left: 6vw;
@@ -498,14 +500,67 @@ body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  background-image: url("../assets/Layout/img-fresas-2.png");
-  background-position: 720px 0px;
-  background-repeat: no-repeat;
 }
 
 .scroll {
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+.layout__fresa-2 {
+  position: absolute;
+  left: 720px;
+  top: 0;
+  z-index: 100;
+}
+
+.layout__fresa-3 {
+  position: absolute;
+  left: 1164px;
+  top: 549px;
+  z-index: 100;
+}
+
+.layout__fresa-4 {
+  position: absolute;
+  left: 0;
+  top: 503px;
+  z-index: 100;
+}
+
+.layout__fresa-5 {
+  position: absolute;
+  left: 59px;
+  top: 934px;
+  z-index: 100;
+}
+
+.layout__fresa-6 {
+  position: absolute;
+  left: 1323px;
+  top: 899px;
+  z-index: 100;
+}
+
+.layout__fresa-7 {
+  position: absolute;
+  left: 0;
+  top: 1315px;
+  z-index: 100;
+}
+
+.layout__fresa-8 {
+  position: absolute;
+  left: 1250px;
+  top: 1290px;
+  z-index: 100;
+}
+
+.layout__fresa-9 {
+  position: absolute;
+  left: 252px;
+  top: 1393px;
+  z-index: 100;
 }
 
 /*# sourceMappingURL=main.css.map */
