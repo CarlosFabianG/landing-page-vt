@@ -11,7 +11,10 @@ header {
     .header-logo {
         margin-left: 7vw;
     }
-    .nav {
+    .nav__desktop {
+        display: none;
+    }
+    .nav__mobile {
         display: none;
         display: flex;
         flex-direction: column;
@@ -25,38 +28,40 @@ header {
         height: 100vh;
         z-index: 3;
         transition: .3s;
-    }
 
-    .nav--active {
-        left: 0;
-        .nav__menu {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            height: 50vh;
-            text-align: center;
-            font-size: 24px;
-            text-transform: uppercase;
-            font-weight: 300;
-            padding-left: 0;
-            list-style: none;
-            a {
-                text-decoration: none;
+        &--active {
+            left: 0;
+            .menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 50vh;
+                text-align: center;
+                font-size: 24px;
+                text-transform: uppercase;
+                font-weight: 300;
+                padding-left: 0;
                 list-style: none;
-                color: white;
-                cursor: pointer;
+                a {
+                    text-decoration: none;
+                    list-style: none;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+            .icons {
+                position: absolute;
+                top: 90vh;
+                background: #4f164d;
+                width: 40vw;
+                height: 7vh;
+                display: inline-flex;
+                justify-content: space-around;
             }
         }
-        .nav__icons {
-            position: absolute;
-            top: 90vh;
-            background: #4f164d;
-            width: 40vw;
-            height: 7vh;
-            display: inline-flex;
-            justify-content: space-around;
-        }
     }
+
+   
 
     .burguer-icon {
         background-color: transparent;
@@ -89,20 +94,22 @@ header {
                 width: 35px;
                 height: 10px;
                 margin-top: 24px;
-                margin-left: 11px;
+                margin-left: 12px;
             }
             & span:nth-child(2){
                 transform: rotate(-45deg);
                 width: 35px;
                 height: 10px;
                 margin-top: -9px;
-                margin-left: 11px;
+                margin-left: 12px;
             }
             & span:nth-child(3){
                 display: none;
             }
         }
     }
+
+    
 
     @include desktop {
         display: flex;
@@ -112,7 +119,10 @@ header {
         img{
             padding-left: 6vw;
         }
-        .nav {
+        .nav__mobile {
+            display: none;
+        }
+        .nav__desktop {
             display: flex;
             padding-right: 5vw;
             align-items: center;

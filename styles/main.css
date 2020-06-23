@@ -22,7 +22,10 @@ header {
 header .header-logo {
   margin-left: 7vw;
 }
-header .nav {
+header .nav__desktop {
+  display: none;
+}
+header .nav__mobile {
   display: none;
   display: flex;
   flex-direction: column;
@@ -37,10 +40,10 @@ header .nav {
   z-index: 3;
   transition: 0.3s;
 }
-header .nav--active {
+header .nav__mobile--active {
   left: 0;
 }
-header .nav--active .nav__menu {
+header .nav__mobile--active .menu {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -52,13 +55,13 @@ header .nav--active .nav__menu {
   padding-left: 0;
   list-style: none;
 }
-header .nav--active .nav__menu a {
+header .nav__mobile--active .menu a {
   text-decoration: none;
   list-style: none;
   color: white;
   cursor: pointer;
 }
-header .nav--active .nav__icons {
+header .nav__mobile--active .icons {
   position: absolute;
   top: 90vh;
   background: #4f164d;
@@ -100,14 +103,14 @@ header .burguer-icon--active span:nth-child(1) {
   width: 35px;
   height: 10px;
   margin-top: 24px;
-  margin-left: 11px;
+  margin-left: 12px;
 }
 header .burguer-icon--active span:nth-child(2) {
   transform: rotate(-45deg);
   width: 35px;
   height: 10px;
   margin-top: -9px;
-  margin-left: 11px;
+  margin-left: 12px;
 }
 header .burguer-icon--active span:nth-child(3) {
   display: none;
@@ -122,26 +125,29 @@ header .burguer-icon--active span:nth-child(3) {
   header img {
     padding-left: 6vw;
   }
-  header .nav {
+  header .nav__mobile {
+    display: none;
+  }
+  header .nav__desktop {
     display: flex;
     padding-right: 5vw;
     align-items: center;
   }
-  header .nav__menu {
+  header .nav__desktop__menu {
     display: flex;
     list-style: none;
   }
-  header .nav__menu li {
+  header .nav__desktop__menu li {
     padding-left: 4vw;
   }
-  header .nav__menu li a {
+  header .nav__desktop__menu li a {
     text-decoration: none;
     color: black;
   }
-  header .nav__icons {
+  header .nav__desktop__icons {
     padding-left: 3vw;
   }
-  header .nav__icons img {
+  header .nav__desktop__icons img {
     padding-left: 1vw;
   }
   header .burguer-icon {
@@ -482,6 +488,7 @@ header .burguer-icon--active span:nth-child(3) {
     left: 7vw;
     bottom: 4vh;
     text-align: start;
+    width: fit-content;
   }
   .footer p {
     margin-bottom: 5px;
