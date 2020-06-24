@@ -96,4 +96,43 @@
         }
     
     }
+
+    @include desktop-l {
+        height: 719px;
+
+        &__title {
+            font-size: 44px;
+            padding-top: 7vh;
+        }
+
+        .product__container {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+            margin-top: 7vh;
+        }
+        &__product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            &--griego {
+                width: 356px;
+                height: 212px;
+            }
+            &--sn-azucar {
+                height: 256px;
+                width: 223px;
+            }
+            &--bebible {
+                width: 296px;
+                height: 414px;
+            }
+            p {
+                font-size: 22px;
+                font-weight: 300;
+                margin: 0;
+            }
+        }
+    }
 }
