@@ -71,6 +71,47 @@
         }
     }
 
+    @include tablet {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        height: 664px;
+        &__image-container {
+            position: relative;
+            padding-left: 0;
+            margin-right: 8vw;
+            margin-top: 10vh;
+            img{
+                height: 455px;
+            }
+            
+        }
+        &__text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 40vw;
+            text-align: start;
+            padding-top: 0;
+            margin-top: 15vh;
+            h4 {
+                margin: 0;
+            }
+            p {
+                font-size: 14px;
+            }
+            .hero-icons {
+                div{
+                    margin-bottom: 90px;
+                }
+                
+            }
+            button {
+                width: 30vw;
+            }
+        }
+    }
+
     @include desktop {
         display: flex;
         justify-content: center;
