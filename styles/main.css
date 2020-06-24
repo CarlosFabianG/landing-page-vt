@@ -192,6 +192,69 @@ header .burguer-icon--active span:nth-child(3) {
     display: none;
   }
 }
+@media (min-width: 1440px) and (max-width: 1920px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 110;
+    position: relative;
+  }
+  header .header-logo {
+    padding-left: 4em;
+  }
+  header .nav__mobile {
+    display: none;
+  }
+  header .burguer-icon {
+    display: none;
+  }
+  header .nav__desktop {
+    display: flex;
+    padding-right: 5vw;
+    align-items: center;
+  }
+  header .nav__desktop__menu {
+    display: flex;
+    list-style: none;
+  }
+  header .nav__desktop__menu li {
+    padding-left: 4vw;
+  }
+  header .nav__desktop__menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  header .nav__desktop__icons {
+    padding-left: 3vw;
+  }
+  header .nav__desktop__icons img {
+    padding-left: 1vw;
+  }
+  header .nav__desktop .nav__desktop {
+    display: flex;
+    padding-right: 5vw;
+    align-items: center;
+  }
+  header .nav__desktop .nav__desktop__menu {
+    display: flex;
+    list-style: none;
+  }
+  header .nav__desktop .nav__desktop__menu li {
+    padding-left: 4vw;
+  }
+  header .nav__desktop .nav__desktop__menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  header .nav__desktop .nav__desktop__icons {
+    padding-left: 3vw;
+  }
+  header .nav__desktop .nav__desktop__icons img {
+    padding-left: 1vw;
+  }
+}
 
 .hero {
   background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);

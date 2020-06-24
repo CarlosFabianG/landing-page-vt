@@ -197,5 +197,71 @@ header {
             display: none;
         }
     }
+
+    @include desktop-l {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        z-index: 110;
+        position: relative;
+        .header-logo{
+            padding-left: 4em;
+        }
+        .nav__mobile {
+            display: none;
+        }
+        .burguer-icon {
+            display: none;
+        }
+        .nav__desktop {
+            display: flex;
+            padding-right: 5vw;
+            align-items: center;
+            &__menu {
+                display: flex;
+                list-style: none;
+                
+                li {
+                    padding-left: 4vw;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            &__icons {
+                padding-left: 3vw;
+                img {
+                    padding-left: 1vw;
+                }
+            }
+            .nav__desktop {
+                display: flex;
+                padding-right: 5vw;
+                align-items: center;
+                &__menu {
+                    display: flex;
+                    list-style: none;
+                    
+                    li {
+                        padding-left: 4vw;
+                        
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+                &__icons {
+                    padding-left: 3vw;
+                    img {
+                        padding-left: 1vw;
+                    }
+                }
+            }
+        }
+    }
     
     }
