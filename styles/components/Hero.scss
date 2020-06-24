@@ -3,7 +3,7 @@
     background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
     box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
     padding: 0 5.5vw;
-    clip-path: polygon(100% 100%, 0 calc(100% - 15vw), 0% 0%, 100% 0%);
+    clip-path: polygon(100% 100%, 0 calc(100% - 9vw), 0% 0%, 100% 0%);
     &__image-container {
         position: absolute;
         padding-left: 24vw;
@@ -118,7 +118,7 @@
         align-items: center;
         margin-top: 0;
         height: 664px;
-        clip-path: polygon(100% 100%, 0 calc(100% - 10vw), 0% 0%, 100% 0%);
+        clip-path: polygon(100% 100%, 0 calc(100% - 6vw), 0% 0%, 100% 0%);
         &__image-container {
             position: static;
             padding-left: 0;
@@ -162,6 +162,7 @@
         align-items: center;
         margin-top: 0;
         height: 664px;
+        max-width: 1920px;
         &__image-container {
             position: static;
             padding-left: 0;
@@ -197,5 +198,10 @@
                 width: 20vw;
             }
         }
+    }
+
+    @include max-view {
+        height: 764px;
+        clip-path: polygon(100% 100%, 0 calc(100% - 5vw), 0% 0%, 100% 0%);
     }
 }

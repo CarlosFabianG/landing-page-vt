@@ -11,6 +11,7 @@ body {
     font-size: 16px;
     margin: 0;
     padding: 0;
+    max-width: 1920px;
 }
 .scroll {
     overflow-x: hidden;
@@ -210,4 +211,34 @@ body {
         top: 1393px;
         z-index: 100;
     }
+}
+
+@include max-view {
+    body{
+        margin: 0 auto;
+    }
+    .layout__fresa-2{
+        position: absolute;
+        left: 720px;
+        top: 0;
+        z-index: 100;
+    }
+     
+    .layout__fresa-6 {
+        display: none;
+        position: absolute;
+        left: 90vw;
+        top: 899px;
+        z-index: 100;
+    }
+    
+    .layout__fresa-8 {
+        display: none;
+        position: absolute;
+        left: 88.5vw;
+        top: 1290px;
+        z-index: 100;
+    }
+    
+   
 }

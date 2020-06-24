@@ -192,7 +192,7 @@ header .burguer-icon--active span:nth-child(3) {
     display: none;
   }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -200,6 +200,7 @@ header .burguer-icon--active span:nth-child(3) {
     height: 100px;
     z-index: 110;
     position: relative;
+    max-width: 1920px;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #000000;
@@ -263,7 +264,7 @@ header .burguer-icon--active span:nth-child(3) {
   background-image: linear-gradient(to bottom, #f9e6e6, #ebacac);
   box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
   padding: 0 5.5vw;
-  clip-path: polygon(100% 100%, 0 calc(100% - 15vw), 0% 0%, 100% 0%);
+  clip-path: polygon(100% 100%, 0 calc(100% - 9vw), 0% 0%, 100% 0%);
 }
 .hero__image-container {
   position: absolute;
@@ -386,7 +387,7 @@ header .burguer-icon--active span:nth-child(3) {
     align-items: center;
     margin-top: 0;
     height: 664px;
-    clip-path: polygon(100% 100%, 0 calc(100% - 10vw), 0% 0%, 100% 0%);
+    clip-path: polygon(100% 100%, 0 calc(100% - 6vw), 0% 0%, 100% 0%);
   }
   .hero__image-container {
     position: static;
@@ -426,13 +427,14 @@ header .burguer-icon--active span:nth-child(3) {
     width: 20vw;
   }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .hero {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 0;
     height: 664px;
+    max-width: 1920px;
   }
   .hero__image-container {
     position: static;
@@ -470,6 +472,12 @@ header .burguer-icon--active span:nth-child(3) {
   }
   .hero__text-container button {
     width: 20vw;
+  }
+}
+@media (min-width: 1921px) {
+  .hero {
+    height: 764px;
+    clip-path: polygon(100% 100%, 0 calc(100% - 5vw), 0% 0%, 100% 0%);
   }
 }
 
@@ -576,7 +584,7 @@ header .burguer-icon--active span:nth-child(3) {
     width: 18vw;
   }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .nutrimental {
     display: flex;
     justify-content: center;
@@ -608,6 +616,22 @@ header .burguer-icon--active span:nth-child(3) {
   }
   .nutrimental .text-container .text .text-ingredientes {
     width: 18vw;
+  }
+}
+@media (min-width: 1921px) {
+  .nutrimental {
+    height: 700px;
+  }
+  .nutrimental .nutrimental__container h3 {
+    font-size: 44px;
+  }
+  .nutrimental .nutrimental__container p {
+    font-size: 24px;
+  }
+  .nutrimental .nutrimental__container .table {
+    width: 592px;
+    height: 409px;
+    font-size: 20px;
   }
 }
 
@@ -703,7 +727,7 @@ header .burguer-icon--active span:nth-child(3) {
     margin: 0;
   }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .familia {
     height: 719px;
   }
@@ -738,6 +762,12 @@ header .burguer-icon--active span:nth-child(3) {
     font-size: 22px;
     font-weight: 300;
     margin: 0;
+  }
+}
+@media (min-width: 1921px) {
+  .familia {
+    height: 800px;
+    font-size: 32px;
   }
 }
 
@@ -793,11 +823,33 @@ header .burguer-icon--active span:nth-child(3) {
     margin-bottom: 5px;
   }
 }
+@media (min-width: 1440px) {
+  .footer {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 0 5px;
+    height: 116px;
+  }
+  .footer__icons {
+    padding-top: 3.5vh;
+  }
+  .footer__text {
+    position: relative;
+    left: 7vw;
+    bottom: 4vh;
+    text-align: start;
+    width: fit-content;
+  }
+  .footer p {
+    margin-bottom: 5px;
+  }
+}
 
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
+  max-width: 1920px;
 }
 
 .scroll {
@@ -943,7 +995,7 @@ body {
     z-index: 100;
   }
 }
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (min-width: 1440px) {
   .layout__images__container {
     display: block;
   }
@@ -1001,6 +1053,34 @@ body {
     position: absolute;
     left: 252px;
     top: 1393px;
+    z-index: 100;
+  }
+}
+@media (min-width: 1921px) {
+  body {
+    margin: 0 auto;
+  }
+
+  .layout__fresa-2 {
+    position: absolute;
+    left: 720px;
+    top: 0;
+    z-index: 100;
+  }
+
+  .layout__fresa-6 {
+    display: none;
+    position: absolute;
+    left: 90vw;
+    top: 899px;
+    z-index: 100;
+  }
+
+  .layout__fresa-8 {
+    display: none;
+    position: absolute;
+    left: 88.5vw;
+    top: 1290px;
     z-index: 100;
   }
 }
