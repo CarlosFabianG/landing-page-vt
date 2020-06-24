@@ -200,6 +200,9 @@ header .burguer-icon--active span:nth-child(3) {
     height: 100px;
     z-index: 110;
     position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #000000;
   }
   header .header-logo {
     padding-left: 4em;
@@ -384,6 +387,52 @@ header .burguer-icon--active span:nth-child(3) {
     margin-top: 0;
     height: 664px;
     clip-path: polygon(100% 100%, 0 calc(100% - 10vw), 0% 0%, 100% 0%);
+  }
+  .hero__image-container {
+    position: static;
+    padding-left: 0;
+    padding-top: 6vh;
+    margin-right: 5vw;
+  }
+  .hero__image-container img {
+    height: 555px;
+  }
+  .hero__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40vw;
+    text-align: start;
+    margin-top: 10vh;
+    padding-top: 0;
+  }
+  .hero__text-container h4 {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: #78246d;
+  }
+  .hero__text-container p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    color: #000000;
+  }
+  .hero__text-container .hero-icons div {
+    margin-bottom: 90px;
+  }
+  .hero__text-container button {
+    width: 20vw;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    height: 664px;
   }
   .hero__image-container {
     position: static;
