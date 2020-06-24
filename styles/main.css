@@ -395,6 +395,41 @@ header .burguer-icon--active span:nth-child(3) {
 .nutrimental .table td {
   padding: 5px;
 }
+@media (min-width: 748px) and (max-width: 1023px) {
+  .nutrimental {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+  .nutrimental .nutrimental__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .nutrimental .nutrimental__container h3 {
+    font-size: 32px;
+  }
+  .nutrimental .nutrimental__container .table {
+    width: 392px;
+    height: 250px;
+    font-size: 14px;
+  }
+  .nutrimental .nutrimental__container td {
+    height: 20px;
+  }
+  .nutrimental .text-container {
+    display: flex;
+  }
+  .nutrimental .text-container .text {
+    width: 28vw;
+    margin-right: 5vw;
+  }
+  .nutrimental .text-container .text p {
+    font-size: 12px;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1439px) {
   .nutrimental {
     display: flex;
