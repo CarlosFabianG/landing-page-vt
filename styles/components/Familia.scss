@@ -48,8 +48,12 @@
         }
         .product__container {
             flex-direction: row;
-            justify-content: flex-end;
-            margin-top: 15vh;
+            justify-content: center;
+            margin-top: 80px;
+            align-items: baseline;
+           p {
+               font-size: 12px;;
+           }
         }
     }
 

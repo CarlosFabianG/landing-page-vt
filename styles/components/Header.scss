@@ -163,8 +163,8 @@ header {
         height: 100px;
         z-index: 110;
         position: relative;
-        img{
-            padding-left: 6vw;
+        .header-logo{
+            padding-left: 4em;
         }
         .nav__mobile {
             display: none;

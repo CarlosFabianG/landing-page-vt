@@ -22,10 +22,133 @@ body {
     display: none;
 }
 
+@include tablet {
+    .layout__images__container {
+        display: block;
+    }
+    .layout__fresa-2 {
+        position: absolute;
+        left: 48vw;
+        top: 0;
+        z-index: 100;
+        width: 331px;
+    }
+    .layout__fresa-3 {
+        position: absolute;
+        left: 77vw;
+        top: 549px;
+        z-index: 100;
+        width: 120px;
+    }
+    .layout__fresa-4 {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 503px;
+        z-index: 100;
+    }
+    .layout__fresa-5 {
+        
+        position: absolute;
+        left: 10vw;
+        top: 710px;
+        z-index: 100;
+        width: 150px;
+    }
+    .layout__fresa-6 {
+        display: none;
+        position: absolute;
+        left: 85vw;
+        top: 899px;
+        z-index: 100;
+    }
+    .layout__fresa-7 {
+        position: absolute;
+        left: 0;
+        top: 1315px;
+        z-index: 100;
+        width: 100px;
+    }
+    .layout__fresa-8 {
+        display: none;
+        position: absolute;
+        left: 86.5vw;
+        top: 1290px;
+        z-index: 100;
+    }
+    .layout__fresa-9 {
+        position: absolute;
+        left: 77vw;
+        top: 1405px;
+        z-index: 100;
+        width: 125px;
+    }
+}
+
 @include desktop {
     .layout__images__container {
-        display: none;
+        display: block;
     }
+    .layout__fresa-2 {
+        position: absolute;
+        left: 52vw;
+        top: 0;
+        z-index: 100;
+    }
+
+    .layout__fresa-3 {
+        position: absolute;
+        left: 77vw;
+        top: 549px;
+        z-index: 100;
+    }
+
+    .layout__fresa-4 {
+        position: absolute;
+        left: 0;
+        top: 503px;
+        z-index: 100;
+        height: 303px;
+    }
+
+    .layout__fresa-5 {
+        display: none;
+        position: absolute;
+        left: 80vw;
+        top: 934px;
+        z-index: 100;
+    }
+
+    .layout__fresa-6 {
+        display: none;
+        position: absolute;
+        left: 85vw;
+        top: 899px;
+        z-index: 100;
+    }
+
+    .layout__fresa-7 {
+        position: absolute;
+        left: 0;
+        top: 1315px;
+        z-index: 100;
+    }
+
+    .layout__fresa-8 {
+        display: none;
+        position: absolute;
+        left: 86.5vw;
+        top: 1290px;
+        z-index: 100;
+    }
+
+    .layout__fresa-9 {
+        position: absolute;
+        left: 81vw;
+        top: 1405px;
+        z-index: 100;
+    }
+
 }
 
 @include desktop-l {
