@@ -503,6 +503,19 @@ header .burguer-icon--active span:nth-child(3) {
   font-size: 11px;
   font-weight: 300;
 }
+@media (min-width: 748px) and (max-width: 1023px) {
+  .familia {
+    margin-top: 10vh;
+  }
+  .familia__title {
+    font-size: 32px;
+  }
+  .familia .product__container {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 15vh;
+  }
+}
 @media (min-width: 1024px) and (max-width: 1439px) {
   .familia {
     height: 719px;

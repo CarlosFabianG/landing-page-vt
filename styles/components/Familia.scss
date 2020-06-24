@@ -40,6 +40,20 @@
         }
     }
 
+    @include tablet {
+        margin-top: 10vh;
+
+        &__title {
+            font-size: 32px;
+        }
+        .product__container {
+            flex-direction: row;
+            justify-content: flex-end;
+            margin-top: 15vh;
+        }
+    }
+
+
     @include desktop {
         height: 719px;
 
