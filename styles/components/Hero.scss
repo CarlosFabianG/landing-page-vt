@@ -8,6 +8,7 @@
         position: absolute;
         padding-left: 24vw;
         padding-top: 20px;
+        
         img {
             height: 300px;
         }
@@ -59,7 +60,7 @@
                 margin-right: 25px;
             }
         }
-        span {
+        .arrow {
             background: $darkish-purple;
             width: 50px;
             height: 50px;
@@ -74,6 +75,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 0;
         height: 664px;
         clip-path: polygon(100% 100%, 0 calc(100% - 10vw), 0% 0%, 100% 0%);
         &__image-container {

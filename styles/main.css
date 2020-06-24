@@ -11,13 +11,11 @@ header {
   background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0.67));
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #000000;
   z-index: 2;
+}
+header .header-logo {
+  padding-left: 15px;
 }
 header .nav__desktop {
   display: none;
@@ -61,7 +59,6 @@ header .nav__mobile--active .menu a {
 header .nav__mobile--active .icons {
   position: absolute;
   top: 90vh;
-  background: #4f164d;
   width: 40vw;
   height: 7vh;
   display: inline-flex;
@@ -112,7 +109,49 @@ header .burguer-icon--active span:nth-child(2) {
 header .burguer-icon--active span:nth-child(3) {
   display: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 748px) and (max-width: 1023px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    z-index: 110;
+    position: relative;
+  }
+  header .header-logo {
+    padding-left: 5vw;
+  }
+  header .burguer-icon {
+    display: none;
+  }
+  header .nav__mobile {
+    display: none;
+  }
+  header .nav__desktop {
+    display: flex;
+    padding-right: 5vw;
+    align-items: center;
+  }
+  header .nav__desktop__menu {
+    display: flex;
+    list-style: none;
+    font-size: 12px;
+  }
+  header .nav__desktop__menu li {
+    padding-left: 4vw;
+  }
+  header .nav__desktop__menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  header .nav__desktop__icons {
+    padding-left: 3vw;
+  }
+  header .nav__desktop__icons img {
+    padding-left: 1vw;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -175,20 +214,12 @@ header .burguer-icon--active span:nth-child(3) {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #78246d;
 }
 .hero__text-container p {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 .hero__text-container .text__sabor {
@@ -196,11 +227,6 @@ header .burguer-icon--active span:nth-child(3) {
   padding-right: 5px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #000000;
 }
@@ -223,10 +249,6 @@ header .burguer-icon--active span:nth-child(3) {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: center;
   color: #ffffff;
   border: 0;
@@ -244,7 +266,7 @@ header .burguer-icon--active span:nth-child(3) {
 .hero .hero-icons div .hero-icons-sello {
   margin-right: 25px;
 }
-.hero .hero-icons span {
+.hero .hero-icons .arrow {
   background: #78246d;
   width: 50px;
   height: 50px;
@@ -253,11 +275,12 @@ header .burguer-icon--active span:nth-child(3) {
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .hero {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
     height: 664px;
     clip-path: polygon(100% 100%, 0 calc(100% - 10vw), 0% 0%, 100% 0%);
   }
@@ -284,20 +307,12 @@ header .burguer-icon--active span:nth-child(3) {
     font-family: "Open Sans", sans-serif;
     font-size: 40px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #78246d;
   }
   .hero__text-container p {
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #000000;
   }
   .hero__text-container .hero-icons div {
@@ -310,6 +325,7 @@ header .burguer-icon--active span:nth-child(3) {
 
 .nutrimental {
   font-family: "Open Sans", sans-serif;
+  margin-top: 12vh;
   padding: 0 5.5vw;
 }
 .nutrimental h3 {
@@ -327,10 +343,6 @@ header .burguer-icon--active span:nth-child(3) {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #000000;
 }
 .nutrimental .table {
@@ -345,7 +357,7 @@ header .burguer-icon--active span:nth-child(3) {
 .nutrimental .table td {
   padding: 5px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .nutrimental {
     display: flex;
     justify-content: center;
@@ -418,7 +430,7 @@ header .burguer-icon--active span:nth-child(3) {
   font-size: 11px;
   font-weight: 300;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .familia {
     height: 719px;
   }
@@ -474,7 +486,7 @@ header .burguer-icon--active span:nth-child(3) {
 .footer__text p {
   margin: 0;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
   .footer {
     font-size: 11px;
     font-weight: 600;
@@ -507,60 +519,75 @@ body {
   overflow-y: hidden;
 }
 
-.layout__fresa-2 {
-  position: absolute;
-  left: 720px;
-  top: 0;
-  z-index: 100;
+.layout__images__container {
+  display: none;
 }
 
-.layout__fresa-3 {
-  position: absolute;
-  left: 1164px;
-  top: 549px;
-  z-index: 100;
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .layout__images__container {
+    display: none;
+  }
 }
+@media (min-width: 1440px) and (max-width: 1920px) {
+  .layout__images__container {
+    display: block;
+  }
 
-.layout__fresa-4 {
-  position: absolute;
-  left: 0;
-  top: 503px;
-  z-index: 100;
-}
+  .layout__fresa-2 {
+    position: absolute;
+    left: 720px;
+    top: 0;
+    z-index: 100;
+  }
 
-.layout__fresa-5 {
-  position: absolute;
-  left: 59px;
-  top: 934px;
-  z-index: 100;
-}
+  .layout__fresa-3 {
+    position: absolute;
+    left: 77vw;
+    top: 549px;
+    z-index: 100;
+  }
 
-.layout__fresa-6 {
-  position: absolute;
-  left: 1323px;
-  top: 899px;
-  z-index: 100;
-}
+  .layout__fresa-4 {
+    position: absolute;
+    left: 0;
+    top: 503px;
+    z-index: 100;
+  }
 
-.layout__fresa-7 {
-  position: absolute;
-  left: 0;
-  top: 1315px;
-  z-index: 100;
-}
+  .layout__fresa-5 {
+    position: absolute;
+    left: 59px;
+    top: 934px;
+    z-index: 100;
+  }
 
-.layout__fresa-8 {
-  position: absolute;
-  left: 1250px;
-  top: 1290px;
-  z-index: 100;
-}
+  .layout__fresa-6 {
+    position: absolute;
+    left: 90vw;
+    top: 899px;
+    z-index: 100;
+  }
 
-.layout__fresa-9 {
-  position: absolute;
-  left: 252px;
-  top: 1393px;
-  z-index: 100;
+  .layout__fresa-7 {
+    position: absolute;
+    left: 0;
+    top: 1315px;
+    z-index: 100;
+  }
+
+  .layout__fresa-8 {
+    position: absolute;
+    left: 86.5vw;
+    top: 1290px;
+    z-index: 100;
+  }
+
+  .layout__fresa-9 {
+    position: absolute;
+    left: 252px;
+    top: 1393px;
+    z-index: 100;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

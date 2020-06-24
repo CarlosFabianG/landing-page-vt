@@ -9,6 +9,9 @@ header {
     @include text-style-6;
     z-index: 2;
     
+    .header-logo {
+        padding-left: 15px;
+    }
     .nav__desktop {
         display: none;
     }
@@ -50,7 +53,6 @@ header {
             .icons {
                 position: absolute;
                 top: 90vh;
-                background: #4f164d;
                 width: 40vw;
                 height: 7vh;
                 display: inline-flex;
@@ -108,6 +110,51 @@ header {
     }
 
     
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        z-index: 110;
+        position: relative;
+
+        .header-logo {
+            padding-left: 5vw;
+        }
+
+        .burguer-icon {
+            display: none;
+        }
+
+        .nav__mobile {
+            display: none;
+        }
+        .nav__desktop {
+            display: flex;
+            padding-right: 5vw;
+            align-items: center;
+            &__menu {
+                display: flex;
+                list-style: none;
+                font-size: 12px;
+                
+                li {
+                    padding-left: 4vw;
+                    
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+            &__icons {
+                padding-left: 3vw;
+                img {
+                    padding-left: 1vw;
+                }
+            }
+        }
+    }
 
     @include desktop {
         display: flex;
